@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>html,css practice</title>
+  </head>
+  <body>
+    <header>this is HTML practice</header>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quo
+      similique unde corrupti rerum maxime dolorem iste temporibus
+      necessitatibus. Sint quibusdam numquam cum sunt incidunt labore
+      accusantium odio nam dolores!
+    </p>
+    
+    <img src="https://via.placeholder.com/150"  usemap="#image-map" alt="Placeholder Image" />
+    <map name="image-map">
+      <area shape="rect" coords="34,44,270,350" href="./assets/2278095-hd_1920_1080_30fps.mp4" alt="video">
+      <area shape="circle" coords="500,500,100" href="./assets/css-streetstyle-mockup.png" alt="image">
+      <area shape="poly" coords="160,60,290,150,230,270,60,200" href="./assets/sample-3s.mp3" alt="audio">
+    </map>
+
+    <form>
+      <label for="fullName">fullName</label>
+      <input type="text" name="fullName" id="fullName" placeholder="fullName" />
+      <br />
+      <label for="email">mailid</label>
+      <input type="email" name="email" id="email" />
+      <br />
+      <label for="pwd">password</label>
+      <input type="password" name="password" id="pwd" />
+      <br />
+      <input type="submit" name="submitform" />
+    </form>
+
+    <ol>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+    <ul>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ul>
+    <!-- description list -->
+    <dl>
+      <dt>Coffee</dt>
+      <dd>Black hot drink</dd>
+
+      <dt>Milk</dt>
+      <dd>White cold drink</dd>
+    </dl>
+
+    <a href="https:google.com" target="_blank">google link</a>
+
+    <table border>
+      <thead>
+        <th>tableheader</th>
+        <th>tableheader</th>
+        <th>tableheader</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>tablebody</td>
+          <td>tablebody</td>
+          <td>tablebody</td>
+        </tr>
+        <tr>
+          <td>tablebody</td>
+          <td>tablebody</td>
+          <td>tablebody</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td>tablefooter</td>
+        <td>tablefooter</td>
+        <td>tablefooter</td>
+      </tfoot>
+    </table>
+
+    <div class="embed-video-container">
+      <iframe
+        src="https://www.youtube.com/embed/Khb_h51n7s0?si=cz7nAWjyZdyyjS89"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <audio src="./assets/sample-3s.mp3" controls></audio>
+    <audio controls>
+      <source src="./assets/sample-3s.mp3" type="audio/mp4" />
+    </audio>
+
+    <div class="embed-video-container">
+    <video src="./assets/2278095-hd_1920_1080_30fps.mp4" controls></video>
+    <div>
+
+    <div class="embed-video-container">
+    <video controls>
+        <source src="./assets/2278095-hd_1920_1080_30fps.mp4" type="video/mp4">
+          <!-- Fallback message for browsers that do not support the video tag -->
+        Your browser does not support the video tag.
+    </video>
+    <div>
+
+    <label for="dryfruits">dryfruits labels</label>
+    <select id="dryfruits">
+        <option value="kaju">kaju</option>
+        <option value="pista">pista</option>
+        <option value="arcot">arcot</option>
+        <option value="grape">grape</option>
+        <option value="badam">badam</option>
+    </select>
+
+    <div>
+         &gt; &lt; &amp;
+    </div>
+
+    <embed src="./assets/website.pdf" type="application/pdf" height="500" width="700">
+
+      <!-- HTML canvas start -->
+      <canvas id="myCanvas" width="500" height="400" style="border:1px solid #000000;">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+    
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+
+      // Drawing a rectangle
+      context.fillStyle = "#FF0000";
+      context.fillRect(50, 50, 150, 100); //fillRect(x, y, width, height) draws a filled rectangle.
+
+      // Drawing a circle
+      context.beginPath();
+      context.arc(300, 200, 40, 0, 2 * Math.PI); //arc(x, y, radius, startAngle, endAngle)
+      context.stroke();//outlines the circle.
+
+  </script>
+      <!-- HTML Canvas end -->
+
+    <footer>this is footer</footer>
+  </body>
+</html>

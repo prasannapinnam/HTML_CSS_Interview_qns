@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*very very very imp styling to make embeded video responsive*/
+.embed-video-container {
+  width: 40vw;
+  height: calc(
+    (9 / 16) * 40vw
+  ); /* to maintain 16:9 aspect ratio of video,height should be (9/16) of current container width */
+}
+
+.embed-video-container iframe,
+.embed-video-container video {
+  width: 100%;
+  height: 100%;
+}
+/*end of very very very imp styling to make embeded video responsive*/

@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.square {
+  height: 80vh;
+  width: 80vw;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.innerdiv {
+  height: 80%;
+  width: 50%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box {
+  height: 10px;
+  width: 10px;
+  background-color: blue;
+}
+
+.griddiv {
+  height: 20%;
+  width: 20%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: aquamarine;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  width: 100%;
+  height: 10vh;
+  background-color: yellow;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: red;
+}
+
+nav a:hover {
+  color: blueviolet;
+}
+
+nav button {
+  background-color: aqua;
+  padding: 10px;
+  border: none;
+  transition: 1.5s ease;
+}
+
+nav button:hover {
+  background-color: yellow;
+}
+
+.griddiv:hover .box {
+  animation: leftRight 1s ease forwards;
+}
+
+@keyframes leftRight {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(52px);
+  }
+}
+
+.boxmodel {
+  height: 100px;
+  width: 100px;
+  background-color: pink;
+  padding: 50px;
+  margin: 100px;
+  border: 20px solid blue;
+}
+
+.griddiv:hover {
+  transform: scale(2, 2);
+  box-shadow: 10px 10px 10px 0 rgba(128, 128, 128, 0.5);
+}
+
+.image-container {
+  height: 180px;
+  border: 1px solid red;
+  border-radius: 20px;
+}
+
+.image-container img {
+  height: 100%;
+  width: auto;
+  border-radius: 19px;
+}
+
+/*grid template areas*/
+.css-grid {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  grid-template-rows: 10vh 1fr 10vh;
+  grid-template-columns: 200px 1fr;
+}
+
+.css-grid header {
+  grid-area: header;
+  background-color: red;
+}
+
+.css-grid aside {
+  grid-area: sidebar;
+  background-color: pink;
+}
+
+.css-grid main {
+  grid-area: content;
+  background-color: yellow;
+}
+
+.css-grid footer {
+  grid-area: footer;
+  background-color: magenta;
+}
